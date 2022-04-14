@@ -37,7 +37,7 @@ function startGame(e) {
        console.log("User Win");
        player1Point++
 
-       player1PointPanel.innerHTML `score: ${player1Point}`
+       player1PointPanel.innerHTML = `Point: ${player1Point}`
 
        winInfoPanel1.innerHTML = 'Win'
        winInfoPanel2.innerHTML = 'Lose'
@@ -46,7 +46,7 @@ function startGame(e) {
     console.log("User Win");
     player1Point++
 
-    player1PointPanel.innerHTML `score: ${player1Point}`
+    player1PointPanel.innerHTML = `Point: ${player1Point}`
 
        winInfoPanel1.innerHTML = 'Win'
        winInfoPanel2.innerHTML = 'Lose'
@@ -56,7 +56,7 @@ function startGame(e) {
   }else if(userAttack === "p" && comp === "r"){
     console.log("User Win");
     player1Point++
-    player1PointPanel.innerHTML `score: ${player1Point}`
+    player1PointPanel.innerHTML = `Point: ${player1Point}`
 
        winInfoPanel1.innerHTML = 'Win'
        winInfoPanel2.innerHTML = 'Lose'
@@ -69,7 +69,7 @@ function startGame(e) {
   }else{
       console.log("Comp Win");
       player2Point++
-      player2PointPanel.innerHTML `score: ${player2Point}`
+      player2PointPanel.innerHTML = `Point: ${player2Point}`
 
       winInfoPanel1.innerHTML = 'Lose'
        winInfoPanel2.innerHTML = 'Win'
@@ -80,4 +80,4 @@ function startGame(e) {
  console.log("user",userAttack);
  console.log("comp", comp);
 }
-  window.onkeydown = startGame;
+ window.onkeydown = startGame;
